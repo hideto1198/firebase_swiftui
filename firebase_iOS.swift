@@ -11,7 +11,7 @@ class firebase_test: ObservableObject{
     @Published var isLoading: Bool = false
     
     let db = Firestore.firestore()
-    var functions = Functions.functions()
+    let functions = Functions.functions()
     
     func http_connect(){
         // 初期化
