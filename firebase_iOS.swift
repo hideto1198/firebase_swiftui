@@ -1,10 +1,3 @@
-//
-//  firebase_iOS.swift
-//  BONAFIDE
-//
-//  Created by 東　秀斗 on 2022/07/01.
-//
-
 import Foundation
 import Firebase
 import FirebaseInstanceID

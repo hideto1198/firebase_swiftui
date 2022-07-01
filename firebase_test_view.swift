@@ -1,10 +1,3 @@
-//
-//  firebase_test_view.swift
-//  BONAFIDE
-//
-//  Created by 東　秀斗 on 2022/07/01.
-//
-
 import SwiftUI
 
 struct firebase_test_view: View {
