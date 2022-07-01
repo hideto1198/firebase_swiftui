@@ -9,15 +9,20 @@ struct firebase_test_view: View {
                 Button(
                     action:{
                         self.Firebase_Test.http_connect()
+                        self.Firebase_Test.db_set()
+                        self.Firebase_Test.db_field_delete()
+                        self.Firebase_Test.db_document_delete()
+                        self.Firebase_Test.db_document_get()
+                        self.Firebase_Test.db_collection_get()
                     }
                 ){
                     Text("Click me")
                 }
             }
-            .alert(isPresented:self.$Firebase_Test.isError, content:{
+            .alert(isPresented:self.$Firebase_Test.isAlert, content:{
                 Alert(
-                    title: Text("エラー"),
-                    message: Text("エラーが発生しました。"),
+                    title: Text("\(self.Firebase_Test.title)"),
+                    message: Text("\(self.Firebase_Test.message)"),
                     dismissButton: .default(
                         Text("OK")
                     )
